@@ -4,7 +4,7 @@
 * **Reverse Engineering:** Artifacts, static & dynamic analysis
 
 ### Tech Stack & Arsenal
-* **RE:** Ghidra, x64dbg, DIE etc.
+* **RE:** Ghidra, x64dbg, DIE, sysinternals etc.
 * **Languages:** Python, Rust, C/C++, x86/x64 Assembly, Ps etc.
 
 ### 📂 Projects & Work
