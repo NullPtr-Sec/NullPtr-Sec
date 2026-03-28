@@ -1,7 +1,7 @@
 ### Focus
-* **Defense (SOC):** Incident Handling, Yara, scripts & Threat Hunting
-* **Offensive (Red Teaming):** Exploitation & Detection
-* **Reverse Engineering:** Artifacts, static & dynamic analysis [malware - malicious code, Ob&deobfuscation].
+* **Defense (SOC):** Incident Handling & response, Yara - Detection, scripts & Threat Hunting
+* **Offensive (Red Teaming):** WinAPI, Exploitation & EDR bypass/evasion
+* **Reverse Engineering:** Artifacts, static & dynamic analysis
 
 ### Tech Stack & Arsenal
 * **RE:** Ghidra, x64dbg, DIE etc.
