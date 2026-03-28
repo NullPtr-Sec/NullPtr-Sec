@@ -34,10 +34,10 @@ jobs:
             
             # yarac compiles the rule to /dev/null. If it fails, syntax is invalid.
             if ! yarac "$rule" /dev/null; then
-              echo "❌ Fehler gefunden in: $rule"
+              echo "Fehler gefunden in: $rule"
               EXIT_CODE=1
             else
-              echo "✅ Erfolgreich kompiliert: $rule"
+              echo "Erfolgreich kompiliert: $rule"
             fi
           done
           
