@@ -1,0 +1,48 @@
+name: YARA Syntax Check
+
+on:
+  push:
+    paths:
+      - '**.yar'
+      - '**.yara'
+  pull_request:
+    paths:
+      - '**.yar'
+      - '**.yara'
+
+jobs:
+  validate-yara:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Install YARA Compiler
+        run: |
+          sudo apt-get update -y
+          sudo apt-get install -y yara
+
+      - name: Run Syntax Check (yarac)
+        run: |
+          # Set exit code variable
+          EXIT_CODE=0
+          
+          # Find all .yar and .yara files and compile them
+          for rule in $(find . -type f \( -name "*.yar" -o -name "*.yara" \)); do
+            echo "Prüfe Syntax von: $rule"
+            
+            # yarac compiles the rule to /dev/null. If it fails, syntax is invalid.
+            if ! yarac "$rule" /dev/null; then
+              echo "❌ Fehler gefunden in: $rule"
+              EXIT_CODE=1
+            else
+              echo "✅ Erfolgreich kompiliert: $rule"
+            fi
+          done
+          
+          # Fail the pipeline if any rule failed
+          if [ $EXIT_CODE -ne 0 ]; then
+            echo "Pipeline fehlgeschlagen aufgrund von Syntax-Fehlern."
+            exit 1
+          fi
