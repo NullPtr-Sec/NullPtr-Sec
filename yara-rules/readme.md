@@ -1,7 +1,6 @@
 # Custom Threat Detection & YARA Rules
 
-a collection of custom YARA rules, querries & detection logic. All rules/querries are actively developed based on 
-real-world SOC incident response cases, threat hunting operations and malware reverse engineering.
+a collection of custom YARA rules, querries & detection logic. All rules/querries are actively developed based for response cases, threat hunting operations and malware reverse engineering.
 
 ## 📂 Structure
 ```
