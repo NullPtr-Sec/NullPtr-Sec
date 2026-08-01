@@ -12,6 +12,7 @@ Purple and Forensik Development
 * **[ZeroTrustCam](https://github.com/NullPtr-Sec/ZeroTrustCam)** ["Rust local Cam-Suite 100% data privacy"]
 * **[IoC-Checker](https://github.com/NullPtr-Sec/IoC-Checker)** ["Rust IOC checker"]
 * **[PanicPwnicorn](https://)** ["Rust Modular C2-Framework(private)"]
+* **[EDR_PROJECT](https://github.com/NullPtr-Sec/edr_project)** ["EDR PROJECT - minifilter, wfp, agent, client, ForensicFront-3D-VR etc."]
 * **Writeups:** [* **HTB:** [https::]
                 [* **THM:** [https::]
 
